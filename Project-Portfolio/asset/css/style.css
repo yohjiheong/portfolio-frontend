@@ -1,0 +1,317 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #f6f0ea;
+    border-bottom: 1px solid #c7bbb6;
+}
+
+nav .nav-link {
+    color: #c8a48c;
+}
+
+nav .nav-link:hover {
+    color: black;
+}
+
+nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: black;
+    transition: width .5s ;
+}
+
+nav .nav-link:hover::after {
+    width: 100%;
+}
+
+nav .navlink:visited {
+    color: #c8a48c;
+} 
+
+/* Header */
+header {
+    background-color: #CB997E;
+    color: #6B705C;
+    padding-bottom: 55px;
+}
+
+header h1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;  
+    /*  Rotates the characters of horizontal scripts 90° clockwise. Lays out the characters of vertical scripts naturally. */
+    padding: 20px 0;
+    font-size: 5em;
+}
+
+header img {
+    width: 300px;
+    padding-top: 20px;
+    margin-right: 50px;
+}
+
+header .text-content {
+    margin-right: 50px;
+}
+
+header .text-content p {
+    font-size: 1.5em;
+}
+
+/* about */ 
+#about {
+    /* background-color: #DDBEA9; */
+    padding: 100px 0;
+    background-image: url("../img/background-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about .image-1 {
+    box-shadow: -20px 20px #B7B7A4;
+}
+
+#about .image-2 {
+    display: none;
+    box-shadow: -20px 20px #B7B7A4;
+}
+
+
+#about text-content {
+    margin-left: 15px;
+}
+
+#about h1 {
+    border-bottom: 2px solid black;
+}
+
+#about p {
+    padding: 10px 0;
+}
+
+#about .quote {
+    font-style: italic;
+    border: 1px solid black;
+}
+
+/* skills */
+#skills {
+    background-color: #FFE8D6;
+    padding: 30px 0;
+    padding-bottom: 50px;
+}
+
+#skills img {
+    padding: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills .card-1 {
+    margin-right: 20px;
+    box-shadow: 10px 10px #B7B7A4;
+}
+
+#skills .card-2 {
+    margin-left: 20px;
+    box-shadow: 10px 10px #B7B7A4;
+}
+
+#skills .card-3 {
+    margin-left: 20px;
+    box-shadow: 10px 10px #B7B7A4;
+}
+
+#skills .card-body {
+    border-top: 1px solid black;
+}
+
+#skills .card-2 img {
+    width: 200px;
+}
+
+#skills .card-3 img {
+    width: 195px;
+}
+
+/* gallery */
+#gallery {
+    /* background-color: #CB997E; */
+    padding: 30px 0;
+    padding-bottom: 85px;
+    background-image: url("../img/background-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery .quote{
+    font-style: italic;
+}
+
+#gallery .grid-container {
+    margin: 0 20px;
+    gap: 5px;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+#gallery .image-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+#gallery .image-title {
+    border-bottom: 1px solid peachpuff;
+    margin-bottom: 5px;
+}
+
+#gallery .image-description {
+    font-family: 'Raleway', sans-serif;
+}
+
+#gallery .grid-item-1 {
+    grid-column: 1/8;
+    grid-row: 1/3;
+    background-image: url("../img/gallery-couple.JPG");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .grid-item-1:hover .image-overlay {
+    display: block;
+}
+
+#gallery .grid-item-2 {
+    grid-column: 8/10;
+    background-image: url("../img/gallery-gheehiang.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .grid-item-2:hover .image-overlay {
+    display: block;
+}
+
+#gallery .grid-item-3 {
+    grid-column: 10/12;
+    background-image: url("../img/gallery-abortion.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 17vw;
+    height: 37vh;
+}
+
+#gallery .grid-item-3:hover .image-overlay {
+    display: block;
+}
+
+#gallery .grid-item-4 {
+    grid-column: 8/13;
+    grid-row: 2/3;
+    background-image: url("../img/gallery-graduation.JPG");
+    background-position: center;
+    background-size: cover;
+    width: 35vw;
+    height: 40vh;
+}
+
+#gallery .grid-item-4:hover .image-overlay {
+    display: block;
+}
+
+#gallery a {
+    display: none;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+/* project */
+#project {
+    background-color: #DDBEA9;
+    padding: 30px 0;
+}
+
+#project .card-1 {
+    box-shadow: 10px 10px #E7D8C5;
+    margin-bottom: 25px;
+}
+
+
+#project .card-2 {
+    box-shadow: -10px 10px #E7D8C5;
+    margin-bottom: 25px;
+}
+
+#project .card-2 .image-2 {
+    text-align: center;
+}
+
+#project .btn {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* contact */
+#contact {
+    background-color: #FFE8D6;
+    padding: 30px 0;
+}
+
+#contact h1 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#contact .col-left {
+    background-color: #888B75;
+    border-radius: 30px;
+}
+
+#contact .col-left p {
+    color: white;
+    padding-top: 25px;
+}
+
+/* media query */
+@media screen and (max-width: 768px){
+    header h1 {writing-mode: horizontal-tb;}
+    header img {display: none;}
+    #about .image-1 {display: none;}
+    #about .image-2 {display: block; height: 450px;}
+    #about .text-content {display: block; padding-top: 50px;}
+    #skills .card-1 {margin-right: 0;}
+    #skills .card-2 {margin-left: 0; margin-top: 15px;}
+    #skills .card-3 {margin-left: 0; margin-top: 15px; }
+    #skills .card-1 .card-body {display: none;}
+    #skills .card-2 .card-body {display: none;}
+    #skills .card-3 .card-body {display: none;}
+    #gallery .image-description {display: none;}
+    #gallery .grid-item-3 .image-overlay {padding: 5px 5px;}
+    #gallery .btn {margin-top: 15px;}
+    #project .card {padding: 0 10px;}
+}
+
+@media screen and (max-width: 610px){
+    #gallery [class*="grid-item-"] {display: none;}
+    #gallery a {display: block;}
+    #contact .col-left {border-radius: 0px;}
+}
+
+@media screen and (max-width: 991px){
+    #about .text-content {padding-top: 50px;} 
+    #contact .col-right {margin-top: 50px;}
+}
